@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BMS UI</title>
+    <script src="static/js/jquery-3.3.1.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/bootstrap.js" type="application/javascript"></script>
+    <script src="static/js/script.js" type="application/javascript"></script>
+</head>
+<body>
+<div class="container-fluid bg-success">
+    <div class="row align-items-center">
+        <h1 class="col">BMS UI</h1>
+        <div class="col btn-group justify-content-end">
+            <button id="toggleFetchButton" class="btn btn-primary">Start fetching</button>
+            <button id="toggleSimulationButton" class="btn btn-secondary">Start simulation</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-info">
+    <div class="row align-items-center">
+        <div class="col">
+            <div>Current: 0,0 A</div>
+            <div>Power: 0,0 W</div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center align-items-center">
+                <div class="col">
+                    <div class="text-dark">
+                        <span><span id="voltage_total" class="voltage">0,0</span> V</span>
+                    </div>
+                    <div id="totalBattery" class="batteryContainer">
+                    <span id="batteryStatContainer_total"
+                          class="row justify-content-center align-items-center batteryStatContainer">
+                                    <span class="batteryStat"><span id="batteryStatValue_total"
+                                                                    class="batteryStatValue">0</span> %</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <table id="batteriesTable" class="table table-bordered table-hover table-responsive-md">
+                <thead>
+                <tr></tr>
+                </thead>
+                <tbody>
+                <tr style="display: none;">
+                    <td id="batteryTemplate">
+                        <div class="text-dark row justify-content-center">
+                            <span><span class="voltage">0,0</span> V</span>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="batteryContainer">
+                                <span class="row justify-content-center align-items-center batteryStatContainer">
+                                    <span class="batteryStat"><span class="batteryStatValue">100</span> %</span></span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<h5 id="dataHeader"></h5>
+
+</body>
+</html>

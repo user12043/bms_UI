@@ -1,0 +1,27 @@
+.batteryContainer {
+    background-image: url("../img/batteryCover.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 56px;
+    font-weight: bold;
+    padding-right: 28px;
+    padding-bottom: 16px;
+}
+
+
+#totalBattery {
+    width: 200px;
+    height: 112px;
+    font-size: xx-large;
+    padding-right: 38px;
+}
+
+.batteryStatContainer {
+    width: 100%;
+    height: 100%;
+    /*background-color: green;*/
+    background: linear-gradient(90deg, green 0%, transparent 0%);
+    margin: 8px;
+    overflow: visible;
+}
