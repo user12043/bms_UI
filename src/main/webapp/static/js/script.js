@@ -11,8 +11,15 @@ let cellsNumber = 10;
 let totalVoltage = cellsNumber * fullVoltageOfCell;
 let currentValues = [];
 $(document).ready(function () {
-    let $batteriesTable = $("#batteriesTable");
+    let $cells = $("#cells");
     let $tr = $(document.createElement("tr"));
+
+    // Display page
+    $("#headerBar").slideDown(500, () => {
+        $("#totalStatus").slideDown(500, () => {
+            $cells.slideDown(500);
+        });
+    });
 
     function createCells(cellsNumber) {
         for (let i = 0; i < cellsNumber; i++) {
@@ -26,7 +33,7 @@ $(document).ready(function () {
             $element.find(".voltage").html(0).attr("id", ("voltage_" + i));
             $element.find(".batteryStatContainer").css("background", getBackgroundAttribute(0)).attr("id", ("batteryStatContainer_" + i));
             $tr.append($element);
-            $batteriesTable.find("tbody").append($tr);
+            $cells.find("tbody").append($tr);
         }
         totalVoltage = cellsNumber * fullVoltageOfCell;
     }

@@ -11,7 +11,8 @@
     <script src="static/js/script.js" type="application/javascript"></script>
 </head>
 <body>
-<div class="container-fluid bg-success">
+<div class="row gap"></div>
+<div id="headerBar" class="container bg-success">
     <div class="row align-items-center">
         <h1 class="col">BMS UI</h1>
         <div class="col btn-group justify-content-end">
@@ -20,35 +21,35 @@
         </div>
     </div>
 </div>
-
-<div class="container-fluid bg-info">
+<div class="row gap"></div>
+<div id="totalStatus" class="container bg-info">
     <div class="row align-items-center">
         <div class="col">
             <div>Current: 0,0 A</div>
             <div>Power: 0,0 W</div>
         </div>
-        <div class="col">
+        <div id="totalBattery" class="col">
             <div class="row justify-content-center align-items-center">
-                <div class="col">
-                    <div class="text-dark">
-                        <span><span id="voltage_total" class="voltage">0,0</span> V</span>
-                    </div>
-                    <div id="totalBattery" class="batteryContainer">
+                <div class="text-dark">
+                    <span><span id="voltage_total" class="voltage">0,0</span> V</span>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div id="totalBatteryContainer" class="batteryContainer">
                     <span id="batteryStatContainer_total"
                           class="row justify-content-center align-items-center batteryStatContainer">
                                     <span class="batteryStat"><span id="batteryStatValue_total"
                                                                     class="batteryStatValue">0</span> %</span></span>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="container-fluid">
+<div class="row gap"></div>
+<div id="cells" class="container">
     <div class="row">
         <div class="col">
-            <table id="batteriesTable" class="table table-bordered table-hover table-responsive-md">
+            <table id="cellsTable" class="table table-bordered table-hover table-responsive-md">
                 <thead>
                 <tr></tr>
                 </thead>

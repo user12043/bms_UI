@@ -1,3 +1,7 @@
+body {
+    background-image: url("../img/background.jpg");
+}
+
 .batteryContainer {
     background-image: url("../img/batteryCover.png");
     background-size: 100% 100%;
@@ -6,15 +10,22 @@
     height: 56px;
     font-weight: bold;
     padding-right: 28px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
 }
 
-
 #totalBattery {
+    font-size: xx-large;
+}
+
+#totalBatteryContainer {
     width: 200px;
     height: 112px;
-    font-size: xx-large;
-    padding-right: 38px;
+    padding-right: 49px;
+    padding-bottom: 26px;
+}
+
+#batteryStatContainer_total {
+    margin: 13px;
 }
 
 .batteryStatContainer {
@@ -22,6 +33,16 @@
     height: 100%;
     /*background-color: green;*/
     background: linear-gradient(90deg, green 0%, transparent 0%);
-    margin: 8px;
+    margin: 7px;
     overflow: visible;
+}
+
+#headerBar, #totalStatus, #cells {
+    display: none;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.gap {
+    margin-top: 20px;
 }
