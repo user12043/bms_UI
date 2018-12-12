@@ -46,3 +46,7 @@ body {
 .gap {
     margin-top: 20px;
 }
+
+#cellsTable > tbody > tr > td {
+    transform: rotate(-90deg)
+}

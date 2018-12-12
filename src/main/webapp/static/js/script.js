@@ -7,7 +7,7 @@
 const fullVoltageOfCell = 4.2;
 
 let interval;
-let cellsNumber = 10;
+let cellsNumber = 24;
 let totalVoltage = cellsNumber * fullVoltageOfCell;
 let currentValues = [];
 $(document).ready(function () {
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     function createCells(cellsNumber) {
         for (let i = 0; i < cellsNumber; i++) {
-            if (i % 5 === 0) {
+            if (i % 8 === 0) {
                 $tr = $(document.createElement("tr"));
             }
             let $element = $("#batteryTemplate").clone();
